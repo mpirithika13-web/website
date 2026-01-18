@@ -1,0 +1,1317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+body{
+    background-color: #f8f8f8;
+    color: #333;
+
+}
+/*singup section*/
+/* moblie size*/
+@media(max-width:480px)
+{
+     .top-banner{
+        width:100%;
+    }
+}
+
+ .top-banner{
+    background-color: #734060;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+ }
+ .banner-text{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    letter-spacing: 1px;
+    color: lightgray;
+ }
+
+ .banner-text i{
+    color: #F2B955;
+    position: relative;
+    right: 5px;
+    font-size: 14px;
+ }
+ .top-banner a{
+    text-decoration: none;
+    color: white;
+    font-weight: 900;
+ }
+ .close-btn{
+    position: absolute;
+    right: 20px;
+    background-color: #734060;
+    border: none;
+    color: white;
+    font-size: 20px;
+     padding: 10px 20px;
+    cursor: pointer;
+    height: 35px;
+ }
+ .close-btn:hover{
+    background-color: #734060;
+ }
+
+
+/*Header*/
+header{
+    display: flex;
+    padding: 20px 50px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+      justify-content: space-around; 
+     align-items: center;  
+   
+}
+
+header img{
+    width: 220px;
+    height: auto; 
+}
+/*navgation*/
+nav ul{
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+ ul li a{
+    text-decoration: none;   
+    color: #333;
+    font-weight: 700;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+ ul i{
+   font-size: 20px;
+   color: #734060;
+}
+/* moblie */
+@media(max-width:480px)
+{
+    .header img{
+        width: 140px;
+    } 
+    #reee li {
+        display: none;
+    }
+}
+
+.fixed-icon{
+    position: fixed;
+    right: 15px;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+.likes{
+    color: #734060;
+}
+.icon i{
+   
+    color: #734060;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+.icon{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.icons{
+     background-color:#734060;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100px;
+    position: relative;
+    top: 8px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.icons i{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+
+/*1 section*/
+.tagline{
+     display: flex;
+     align-items: center;
+    justify-content: center; 
+    letter-spacing: 2px;
+    font-style: normal;
+    color: black;
+    background-color:white;
+    height: 80px;  
+
+}
+/* moblie */
+@media(max-width:480px)
+{
+    .tagline{
+        width:100%;
+    }
+    .tagline img{
+        display: none;
+    }
+}
+
+.recipes{
+    display: flex;
+    width: 80%;
+    margin: 20px auto; 
+    text-align: center; 
+}
+.card img{
+    width: 90%;
+    object-fit: cover;
+    transform: scale(1.03)ease;
+    height: 370px;
+}
+.card1 img{
+    width: 100%;
+    object-fit: cover;
+    transform: scale(1.03)ease;
+    height: 370px;
+    padding: 0px 10px;
+
+}
+.cards img{
+    width:90%;
+    object-fit: cover;
+    transform: scale(1.03)ease;
+    height: 370px;
+    padding: 0px 10px;
+}
+.cards1 img{
+    width:80%;
+    object-fit: cover;
+    transform: scale(1.03)ease;
+    height: 370px;
+}
+/* moblie */
+@media(max-width:480px){
+    .recipes{
+        width:90%;
+        display: inline-block;
+       
+    }
+    .card img{
+         width:100%;
+        display: block;
+        margin-bottom: 10px;
+    
+    }
+    .card1 img{
+        width:100%;
+        display: block;
+        margin-bottom: 10px;  
+    }
+     .cards img{
+         width: 100%; 
+     }
+    
+}
+
+.card:hover{
+    filter:grayscale(30%); 
+    transform: scale(1.03);  
+}
+.card1:hover{
+    filter:grayscale(30%); 
+    transform: scale(1.03);  
+}
+.cards:hover{
+    filter: grayscale(30%);
+    transform: scale(1.03);
+
+}
+.sop{
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 15px;
+    
+    font-size: 12px;
+    color: white;
+    font-weight: 700;
+    background-color:#F2B955;
+    border: none;
+    border-radius: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.sops{
+    letter-spacing: 2px;
+    position: relative;
+    bottom: 15px;
+    width: 100px; 
+    color: white;
+    font-size: 12px;
+    font-weight: 700;
+    background-color:#F2B955;
+    border:none;
+    border-radius: none;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.fixed-icon{
+    position: fixed;
+    bottom: 100px;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    z-index: 1000;
+}
+
+.likes{
+    color: #734060;
+}
+.icon i{
+   
+    color: #734060;
+    background-color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+.icon{
+    background-color: white;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.icons{
+     background-color:#734060;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    font-size: 20px;
+    border-radius: 100px;
+    position: relative;
+    top: 8px;
+     box-shadow: 0px 4px 10px rgba(0,0,0,0.3);
+}
+.icons i{
+    color: white;
+    font-size: 20px;
+    position: relative;
+    top: 10px;
+}
+/* 2 section */
+.watch{
+    text-align: center;
+}
+.watch h2{
+    font-size: 20px;
+}
+/* moblie */
+@media(max-width:480px){
+    .watch{
+        text-align: center;
+        width: 100%;
+    }
+    .watch h2{
+        font-size: 11px;
+    }
+    .instas{
+        display: none;
+    }
+}
+.real{
+   font-size: 35px;
+    font-weight: 400;
+    font-variant: normal;
+    font-family: "Drama Regular";
+    text-transform: lowercase;
+    color: #734060;
+    font-style: italic;
+}
+.video{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 100px 0px 100px;
+}
+.insta{
+    text-align: center;
+    
+}
+.insta iframe{
+    text-align: center;
+    width: 100%;
+    height: 300px; 
+    text-decoration: none;
+    border-radius: 10px;
+    border:1px dotted #734060;
+}
+.insta h3{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.instas{
+    text-align: center;
+    
+}
+.instas iframe{
+    text-align: center;
+    width: 100%;
+    height: 300px; 
+    text-decoration: none;
+    border-radius: 10px;
+    border:1px dotted #734060;
+}
+.instas h3{
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+}
+
+.pic1{
+    color: white;
+    background-color: #734060;
+    border-radius:15px;
+    padding: 0px  5px 2px 5px;
+   position: relative;
+   bottom: 18px;  
+   font-size: 11px;
+}
+.pic1:hover{
+    background-color: #734060;
+}
+
+
+
+/* 3 Section*/
+.Easy {
+     display: flex;
+     gap: 15px;
+     padding: 20px;
+     overflow-x: auto;
+     align-items: center;
+     justify-content: center;
+     justify-items: center;
+}
+.quick img{     
+  width:90px;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+
+}
+.quick h4{
+  
+    color: black;
+    font-size: 16px;
+    margin-top: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.quick{
+    text-align: center;
+    width: 100px;
+}
+
+.quick a{
+    text-decoration: none;
+}
+/* moblie */
+@media(max-width:480px){
+    .search{
+        text-align: center;
+        width:100%;
+    }
+    #view{
+        display: none;
+    }
+    #need1{
+        display: none;
+    }
+}
+.search{
+    position: relative;
+    top: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+.meet{
+    position: relative;
+    display: flex;
+    border: 1px solid gray; 
+    border-top: 5px solid lightgrey;
+    width: 30%;
+    height: 50px;
+    background-color: white;
+}
+.meet input{
+    border: none;
+    font-size: 16px;
+    position: relative;
+    left: 10px; 
+}
+.meet i{
+    color: #734060;
+    position: relative;
+    top: 13px;
+    font-size: 18px;
+    left: 5px;
+}
+#need1{
+    position: relative;
+    padding: 0px 10px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}
+#view {
+    height: 50px;
+    width: 220px;
+    background-color:#734060;
+    border: none;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: none;
+}
+ #view:hover{
+    background-color: #333;
+ }
+
+/* 4 section */
+.fiit{
+    background-color: white;
+    justify-content:center;
+    position: relative;
+    top: 100px;
+   
+}
+
+
+#seen{
+    text-align: center;
+    position: relative;
+     top: 10px; 
+    font-weight: bold;
+    color: #F2B955;
+
+}
+#feed {
+      text-align: center;
+     justify-content: center; 
+     display: grid; 
+    
+}  
+#feed img{
+     width: 100%;
+
+} 
+
+.seen1{
+    padding: 10px 0px 50px 0px;
+    font-weight: bold;
+    color: #734060;
+}
+.seen2{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    position: relative;
+    
+}
+
+.fiit1{
+    justify-content: space-evenly;
+    align-items: center;
+    display: flex;
+}
+.fiit1 img{
+     height: 250px; 
+    width: 100%;
+}
+.nov a{
+    text-decoration: none;
+    color: black;  
+    position: relative;
+   
+}
+
+.nov span{
+    color: gray;
+    position: relative;
+     padding: 10px; 
+}
+.nov h1{
+     padding: 10px; 
+    font-size: 27px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.nov h1:hover{
+    text-decoration: underline;
+}
+.nov p{
+    font-size: 17px;
+      padding: 10px;  
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.loop{
+    position: relative;
+    top: 20px; 
+}
+
+.nov1{
+    color: #F2B955;
+    font-weight: bold;
+     padding-left: 20px; 
+}
+
+.seen4 img{
+    width: 90%;
+    height: auto;
+}
+.seen5{
+    height: auto;
+    width: 320px;
+    background-color: #f2f2f2;
+}
+.coll{
+    color: #734060;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    position: relative;
+    padding: 15px 15px;
+    border-bottom: 2px solid white;
+}
+#names img{
+    width: 100%;
+}
+.pot1{
+    display: flex;
+    text-align: center;
+    border-bottom: 2px solid white;
+    padding: 8px;
+}
+.pot1 a{
+    text-decoration: none;
+    color: #4d4d4d;
+    padding: 10px;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pot1 i{
+    font-size: 14px;
+    font-weight: 500;
+    color: white;
+    position: relative;
+    right: 10px;
+    background-color: #734060;
+    height: 18px;
+    width: 18px;
+    border-radius: 40px;
+    border: 1px solid #734060;
+}
+
+.pot2{
+    color: #4d4d4d;
+    padding-left: 100px;
+   
+}
+.pot3{
+ padding-left: 120px; 
+
+    
+}
+.pot4{
+    padding-left: 110px;
+}
+.pot5{
+    padding-left: 120px;
+}
+.pot6{
+    padding-left: 120px;
+}
+.pot7{
+    padding-left: 120px;
+}
+.pot8{
+    padding-left: 100px;
+}
+.nov4{
+    text-align: center;
+}
+.nov5{
+    background-color: #734060;
+    color: white;
+    width: 30%;
+    padding: 10px 10px 10px 10px;
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+}
+.nov5:hover{
+    background-color: #333;
+}
+/* moblie */
+  @media(max-width:480px){
+  
+     .fiit{
+        width:100%;
+        
+    }
+    .fiit1{
+         flex-direction: column; 
+        width: 100%;
+    }
+    .fiit1 img{
+        width: 100%;
+    }
+    .loop{
+        display: none;
+    }
+    .nov h1{
+        white-space: nowrap;
+        position: relative;
+        bottom: 10px;
+        font-size: 20px;
+    }
+
+     .nov p{
+        position: relative;
+        white-space: nowrap;
+        font-size: 11px;
+        bottom: 20px;
+    } 
+     .seen2{
+        flex-direction: column;
+     }
+     .pot1{
+        padding: 0px 0px 0px 10px;
+    }
+    
+    .nov4{
+        position: relative;
+        top: 20px;
+    } 
+    
+}  
+
+
+/* 5 Section*/
+.book{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 30px;
+}
+
+.eat{
+    width: 340px;
+    height: 450px;
+    background-color: #f3f3f3;
+    padding: 30px;
+    text-align: center;
+
+}
+.eat h2{
+    letter-spacing: 1px;
+}
+.eat h3{
+    font-family: cursive;
+    font-size: 24px;
+    margin: 10px 0 20px 0;
+}
+.eat p{
+    margin-bottom: 30px;
+    line-height: 1.5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.eat button{
+    background: #4a4a4a;
+    color: #fff;
+    padding: 10px 25px;
+    border: none;
+    cursor: pointer;
+    margin-top: 40px;
+}
+.homes img{
+    width: 90%;
+    height: 450px;
+    padding: 0 10px;
+    
+}
+.home img{
+    width: 100%;
+    height:450px;
+
+}
+@media(max-width:480px){
+    .eat button{
+        position: relative;
+        bottom: 90px;
+    }
+}
+
+/*6 Section*/
+
+/* moblie */
+@media(max-width:480px){
+    .weeks{
+        position: relative;
+        margin-top: 50px;
+        width: 100%;  
+    }
+#moblie{
+    font-size: 12px;
+    position: absolute;
+     top: 10px; 
+}
+
+#signupForm input{
+    position: relative;
+    top: 50px;
+   
+}
+
+.but{
+    position: relative;
+    top: 50px;
+    padding: 10px 10px;
+    text-align: center; 
+} 
+}
+
+.weeks{
+      border: 1px solid #734060;
+    background-color: #734060;
+     width: 100%;
+    height: auto;
+    position: relative;
+    top: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 20px;
+
+}
+.ends{
+    display: flex;
+    justify-content: center;
+}
+
+.app h2{
+ font-size: 16px;
+ letter-spacing: 1.5px;
+ position: relative;
+  top: 35px; 
+ color: white;
+ font-family: Georgia, 'Times New Roman', Times, serif;
+ 
+}
+.blue{
+    position: relative;
+     padding: 20px 0; 
+    text-align: center;
+    justify-items: center;
+}
+.blue a{
+    display: inline-block; 
+     margin: 5px; 
+    text-decoration: none;
+    color: white;
+    background-color: #ffffff;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 7px 0px 0px 0px;
+    font-size: 22px;
+}
+.blue i{
+    
+    color:#734060;
+}
+.blue :hover{
+     background-color:lightgray;
+     transform: scale(1.1);
+    
+}
+
+.signup-section h2{
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    bottom: 15px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.handwrite{
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+    text-transform: lowercase;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+form{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    width: 150px;
+    outline: none;
+}
+button{
+    background-color: #f1b200;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+button:hover{
+    background-color: #ffcc33;
+}
+#message{
+    margin-top: 15px;
+    font-size: 18px;
+    color: #ffeb3b;
+    font-weight: bold;
+}
+.success-box{
+    display: none;
+    background-color: #c1f0d0;
+    color: #003c1a;
+    margin: 0 auto;
+    padding: 20px;
+    width: 300px;
+    font-size: 18px;
+    font-weight: bold;
+}
+/* 6 section*/
+.dream{
+    display: flex;
+    justify-content: center;
+    gap: 3px;
+    position: relative;
+    top: 130px;
+}
+
+/* moblie */
+@media(max-width:480px){
+    .dream{
+        width:100%;
+    }
+    #drea{
+        height: 40px;
+        font-weight: 100;
+        left: 150px;
+        position: relative;
+    }
+    .dreams{
+    position: relative;
+    margin-top: 60px;
+    font-size: 11px;
+    font-weight: 100;
+     right: 50px; 
+}
+
+}
+
+.dream button{
+    
+    background-color:lightgray;
+    padding: 10px 10px 10px 10px;
+    border: none;
+    border-right: 2px solid lightgray;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+    border-radius: 0px;
+    position: relative;
+    top: 20px;
+}
+.dreams {
+    color: white;
+    border: none;
+    border-right: 2px solid lightgray;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+.deers img{
+    width: 100%;
+    height: auto;
+}
+.dream :hover{
+    background-color: #734060;
+    color: white;
+}
+#drea{
+    color: white;
+    background-color: #734060;
+    border: none;
+    border-right: 2px solid lightgray;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    letter-spacing: 1px;
+}
+/* moblie */
+@media(max-width:480px){
+    .recipes1{
+        flex-direction: column;
+        width:100%;
+        text-align: center;
+    }
+    .zoom1{
+        width:100%;
+    }
+    .zoom1 img{
+        width:100%;
+    }
+    .zoom1 h3{
+        font-size: 20px;
+    }
+}
+
+
+.recipes1{
+    position: relative;
+    top: 180px;
+    width:80%;
+    gap: 5px;
+    display: flex;
+    margin: 20px auto;
+    text-align: center; 
+     align-items: center; 
+    justify-content: center;
+    justify-items: center; 
+    
+    
+}
+.zoom1{
+    width:270px;
+
+}
+
+.zoom1 img{
+    width: 100%;
+     object-fit: cover;   
+}
+.zoom1 img:hover{
+     transform: scale(1.03);
+    filter: grayscale(20%);
+}
+
+.zoom1 h3{
+    font-size: 24px;
+    text-align: center;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} 
+.seep{
+    color: white;
+    letter-spacing: 1px;
+    font-weight: 400;
+    background-color:#F2B955;
+    position: relative;
+    bottom: 20px;
+} 
+/*8 section*/
+/* moblie */
+@media(max-width:480px){
+    .deer1{
+        width:100%;
+       
+    }
+    .deers{
+        width:100%;
+        flex-direction: column;
+        text-align: center;
+    }
+    .deers img{
+        width:100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    .hide{
+        position: relative;
+        bottom: 10px; 
+        right: 10px; 
+    }
+    #signup{
+        width: 100px;
+        position: relative;
+        left: 150px;
+    
+    }
+    
+
+}
+
+.deer1{
+    background-color: #4d4d4d;
+    height:auto;
+    position: relative;
+    top: 200px;
+    padding-bottom: 30px;
+    width: 100%;
+}
+.deers{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 20px;
+}
+ .deers img{
+    width:320px;
+    
+}
+#first{
+    width: 150px;
+    height: 40px;
+}
+#email{
+    width: 150px;
+    height: 40px;
+}
+#go{
+    width: 35px;
+    height: 40px;
+    padding: 0px 4px 0px 0px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.hide{
+    position: relative;
+    padding: 0px 0px 0px 10px;
+}
+.hide p{
+    color:#ffcc33;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 400;
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+}
+
+#veed{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 16px;
+    color: whitesmoke;  
+}
+.hide h3{
+    color: white;
+    font-size: 22px;
+    letter-spacing: 3px;
+    font-weight: 600;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding: 10px;
+    text-align: center;
+     
+}
+/* 9 section */
+/* moblie */
+@media(max-width:480px){
+    .reet{
+        width:100%;
+    }
+    .cops{
+        flex-direction: column;
+        width: 100%;
+    }
+}
+
+.reet{
+    background-color: white;
+    position: relative;
+    top: 200px;
+    height:auto;
+    padding-bottom: 130px;
+   
+}
+.cops{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 40px;
+}
+#cops1{
+    display: flex;
+   gap: 40px;
+    
+}
+
+.pirith h5{
+    padding-bottom: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #4d4d4d;
+}
+.pirith p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    line-height: 1.5;
+}
+
+
+#Form{
+    position: relative;
+    bottom: 30px;
+}
+.sing{
+    background-color: #734060;
+    height: auto;
+    padding: 20px 30px 20px 30px;
+}
+.sing h2{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    text-align: center;
+    padding: 0px 0px 0px 0px;
+}
+.sing span{
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    letter-spacing: 1px;
+    
+}
+.sing p{
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    color: gray;
+    font-weight: 400;
+    letter-spacing: 1px;
+    padding: 0px 0px 40px 0px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.lili{
+    color: #4d4d4d;
+    position: relative;
+    top: 40px;
+    text-align: center;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+.power{
+    display: flex;
+    position: relative;
+    top: 50px;
+    justify-content: center;
+    gap: 20px;
+}
+.power img{
+    height: auto;
+    width: 10%;
+    color:gray;
+}
+#bank{
+    position: relative;
+    top: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    background-color:gray;
+    height: 30px;
+    width: 30px;
+    padding: 0px 3px 0px 0px;
+}
+#bank:hover{
+    background-color:#3B82F6;
+}
+.banks{
+    display: flex;
+}
+.banks h1{
+    color: #333;
+    position: relative;
+    top: 3px;
+    padding: 0px 0px 0px 10px;
+    font-weight: 900;
+    font-size: 32px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.bulid2{
+    display: flex;
+}
+.bulid2 a{
+     margin: 7px;  
+    text-decoration: none;
+    color: white;
+    background-color:#734060;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    padding: 7px 0px 0px 0px;
+     font-size: 22px; 
+}
+ .bulid2{
+     text-align: center; 
+} 
+.bulid2 i{
+     color: white;
+}
+.bulid3{
+    display: flex; 
+    align-items: center;
+    
+}
+.bulid3 img{
+    width: 180px;
+}
+.bulid3 p{
+    font-size: 13px;
+    padding: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.vicy{
+    text-align: center;
+    position: relative;
+    top: 100px;
+}
+.vicy p{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    padding: 0px 0px 20px 0px;
+
+}
+.vicy a{
+    
+     text-decoration: underline;
+     color: gray;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

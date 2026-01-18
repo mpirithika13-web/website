@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start Here Pinch of yum</title>
+    <link rel="stylesheet" href="Css/sheet.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-96x96.png">
+
+</head>
+<body>
+   
+    <div class="top-banner" id="top-banner">
+        <span class="banner-text"><i class="fa-solid fa-heart"></i>OUR RECIPES,YOUR INBOX.<a href="login.html">SIGN UP</a></span>
+        <button class="close-btn" onclick="closeBanner()"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <script>
+        function closeBanner(){
+            document.getElementById("top-banner").style.display="none";
+        }
+        </script>
+
+    <!--- header section---->
+
+    <header>
+          <img src="image/logo.png" alt="">
+        <nav>
+            <ul id="reee">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="recipe.html">RECIPES</a></li>
+                <li><a href="#">START HERE</a></li>
+                 <li><i class="fa-solid fa-magnifying-glass"></i></li>
+            </ul>
+        </nav>
+    </header>
+     <div class="content">
+            <div class="fixed-icon">
+                <div class="icons"><i class="fa-solid fa-magnifying-glass"></i></div>
+            </div>
+        </div> 
+        <!---1 section---->
+
+         <div class="dev">
+            <div class="con">
+            <img src="image/start1.jpg" alt="">
+            </div>
+            <div class="pree">
+               
+                <h1>Welcome to Pinch of Yum</h1>
+                <h3>LEST'S TALK FOOD <img src="image/pic3.png" alt="" id="ima"></h3>
+                <p>Well, we hope that’s why you’re here. Our recipes are designed for real, actual, every<br>day life, and we try to focus on real foods and healthy recipes (which honestly means<br>a lot of different things to us, including the perfect chocolate chip cookie and cheese<br>on cheese on cheese, because health is all about balance, right?).</p><br>
+                <p>This is the place to find those recipes — everything from our most popular, to meal<br>prep, to Instant Pot recipes, or if you just, like, have some sad greens in your fridge to<br>use up and you need some inspiration.</p><br><br>
+                <p>You’re here! Have fun. We hope you find something (many things) you love.</p>
+            </div>
+        </div>
+        <!---2 section----->
+         <div class="weeks">
+        <div class="ends">
+            <div class="app">
+                <h2>FOLLOW US</h2>
+            </div>
+
+            <div class="blue">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            </div>
+        </div>
+
+      <div class="signup-section">
+      <h2><span class="handwrite">signup</span> FOR EMAIL UPDATES</h2>
+      <form id="signupForm">
+      <input type="text" id="firstName" placeholder="First Name">
+      <input type="email" id="email" placeholder="Email">
+      <button id="gobtn" class="but">GO</button> 
+       
+      </form>
+      <P id="messages" class="success-box">success! Now check your email to confirm your subcrition</P> 
+      </div>
+    </div>
+    </div>
+    
+    <script>
+      document.getElementById("gobtn").addEventListener("click",function(){
+        
+        let firstName=document.getElementById("firstName").value;
+        let email=document.getElementById("email").value;
+        let messages=document.getElementById("messages");
+
+        if(firstName===""||email===""){
+          alert("please fill all filds!");
+          return;
+        }
+        messages.style.display="block";
+
+      });
+      
+
+     </script>
+       <!---3 section----->
+       <div class="deep">
+        <div class="deep1">
+            <h2>Search our Recipes</h2>
+        <div class="meet">
+            <i class="fa-solid fa-magnifying-glass"></i>
+           <input type="text" placeholder="Search by keyword">
+        </div>
+         <p>Or browse our favorites below</p>
+        </div>
+       </div>
+       <!---4 section---->
+
+     <div class="reff">
+     <i class="fa-solid fa-trophy"></i>
+     <h2>TOP RATED SOUP RECIPES</h2>
+    </div>
+
+     <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green1.jpg" alt="">
+            <h2>The Best Detox Crockpot Lentil<br>Soup <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green2.jpg" alt="">
+            <h2>5 Minute Magic Green Sauce <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+     </div>
+
+      <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green3.jpg" alt="">
+            <h2>Creamy Thai Sweet Potato Curry<br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+         <div class="tap">
+            <a href="#">
+            <img src="image/green4.jpg" alt="">
+            <h2>The Best Detox Crockpot Lentil<br>Soup <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+        
+
+        
+     </div>
+     
+
+      <div class="reff">
+     <h2>MEAL PREP  RECIPES</h2>
+    </div>
+   
+     <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green5.jpg" alt="">
+            <h2>Scsame Noodle Bowls <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green6.jpg" alt="">
+            <h2>Meal Prep Breakfast Sandwiches <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+     </div>
+
+
+      <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green7.jpg" alt="">
+            <h2>Cauliflower Fried Rice With<br> Crispy Tofu<br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green8.jpg" alt="">
+            <h2>Cilantro Lime Chicken and Lentil<br>Rice Bowls <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+     </div>
+     
+     
+
+     <!---- 5 section----->
+    <div class="milk">
+     <div class="name">
+      <i class="fa-brands fa-youtube"></i>
+      <h2>POPULAR VIDEOS</h2>
+    </div>
+    <div class="code">
+      <div class="over">
+     <iframe width="352" height="198" src="https://www.youtube.com/embed/5ZAfN5owxJc" title="Miracle No Knead Bread" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+       <h3>No Knead Bread</h3>
+       </div>
+       <div class="over">
+      <iframe width="352" height="198" src="https://www.youtube.com/embed/JdbGVDYu4mQ" title="The Best Soft Chocolate Chip Cookies" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>Best Soft Chocolate Chip cookies</h3>
+       </div>
+       <div class="over">
+       <iframe width="352" height="198" src="https://www.youtube.com/embed/5ZAfN5owxJc" title="How to Cook Tofu" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <h3>How to Cook Tofu</h3>
+     </div>
+    </div> 
+    </div>
+
+    <!---- 6 section---->
+ <div class="reff">
+     <h2>MEAL PREP  RECIPES</h2>
+    </div>
+   
+     <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green9.jpg" alt="">
+            <h2>Scsame Noodle Bowls <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green10.jpg" alt="">
+            <h2>Meal Prep Breakfast Sandwiches <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+     </div>
+
+      <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green11.jpg" alt="">
+            <h2>Cauliflower Fried Rice With<br> Crispy Tofu<br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+         <div class="tap">
+            <a href="#">
+            <img src="image/green12.jpg" alt="">
+            <h2>Cauliflower Fried Rice With<br> Crispy Tofu<br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>  
+     </div>
+
+     <div class="reff">
+     <h2>MEAL PREP RECIPES</h2>
+    </div>
+   
+     <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green13.jpg" alt="">
+            <h2>Scsame Noodle Bowls <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green14.jpg" alt="">
+            <h2>Meal Prep Breakfast Sandwiches <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+     </div>
+
+      <div class="are">
+        <div class="tap">
+            <a href="#">
+            <img src="image/green15.jpg" alt="">
+            <h2>Cauliflower Fried Rice With<br> Crispy Tofu<br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+
+         <div class="tap">
+            <a href="#">
+            <img src="image/green3.jpg" alt="">
+            <h2>Cilantro Lime Chicken and Lentil<br>Rice Bowls <br><br><p class="break">Detox Crockpot Lentil Soup – a clean and<br>simple soup made with onions, garlic,<br>carrots, olive oil, squash, and LENTILS! Super<br>healthy and easy to make.</p><br><button class="make">MAKE THIS RECIPES</button></h2>
+            </a>
+        </div>
+    </div>
+    <hr> 
+      
+    
+
+      <!----7 section ------>
+        
+     <div class="reet">
+        
+            <div class="cops">
+             <div class="queen"> 
+                <div id="cops1">
+                <div class="pirith">
+                <h5>PINCH</h5>
+                <p>About</p>
+                <p>Blog</p>
+                <p>Recipes</p>
+                <p>Blogging Resources</p>
+                <p>Income Reports</p>
+                <p>Sponsored Content</p>
+                <p>Media Mentions</p>
+                <p>Contact</p>
+                </div>
+
+                <div class="pirith">
+                <h5>FOOD RECIPES</h5>
+                <p>Sugar Free January</p>
+                <p>Freezer Meals 101</p>
+                <p>Quick and Easy Recipes</p>
+                <p>Instant Pot Recipes</p>
+                <p>Pasta Recipes</p>
+                <p>Vegan Recipes</p>
+                <p>Soup Recipes</p>
+                <p>Taco Recipes</p>
+                <p>Meal Prep Recipes</p>
+                </div>
+                </div>
+                
+               <div class="bulid1">
+                <div class="bulid2">
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            <div class="bulid3">
+              <img src="image/logo.png" alt="">
+              <p>© 2025 Pinch of Yum. All Rights Reserved.<br>A Raptive Partner Site.</p>
+            </div>
+            </div>
+                 </div> 
+                
+            <div class="sing1">
+                <div class="sing">
+                <h2>signup <span>FOR EMAIL UPDATES</span></h2>
+                <p>Get a Free eCookbook with our top 25 recipes</p>
+                <form id="Form">
+                    <input type="text" id="firstNames" placeholder="First Name">
+                    <input type="email" id="emaild" placeholder="Email">
+                    <button>GO</button>
+                </form>
+                </div>
+
+                <h3 class="lili">OUR OTHER BRAND</h3>
+                <div class="power">
+                    <img src="image/logo4.jpg" alt="">
+                    <div class="banks">
+                    <button id="bank">c</button>
+                    <h1>clariti</h1>
+                </div>
+        </div>
+        
+            </div>
+            </div>
+             <div class="vicy">
+            <p>Privacy policy Team</p>
+            <p class="used">information from your device can be used to personalize your ad experience.</p>
+             <a href="#" class="team">Do not sell or share my personal information</a>
+        </div>  
+ 
+</body>
+</html>

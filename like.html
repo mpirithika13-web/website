@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinch of yum- A food blog with Recipes </title>
+    <link rel="stylesheet" href="Css/like.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-96x96.png">
+</head>
+<body>
+
+
+    <!-----top section----->
+    <div id="close">
+      <div class="pur">
+    <div class="top-like" >
+       <span id="totalLikes">0</span> <i class="fa-solid fa-heart"></i>
+    </div>
+    <a href="index.html">
+    <div id="neek">
+      <i class="fa-solid fa-angle-down"></i>
+    </div>
+    </a>
+
+    <div class="pirithi">
+      <h4>M.Pirithika</h4>
+      <p>Powered by Slickstream</p>
+    </div>
+   </div>
+  </div>
+
+  <!----search------>
+  <div class="search">
+    <input type="text" placeholder="search for a Recipe">
+     <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+
+
+    <!----Recipe card----->
+    <div class="slider-wrapper">
+      <p class="last">RELATED &#10095; <button>show all</button></p>
+       <button class="arrow left" onclick="slideLeft(this)"><i class="fa-solid fa-angle-left"></i></button>
+
+      <div class="slider" id="slider">
+
+        <div class="card">
+          <img src="image/pinch1.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">The best soft<br>Chocolate Chips....</p>
+        </div>
+         <div class="card">
+          <img src="image/pinch2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i>13.5k</button>
+          <p class="soft">soft Gingerbread<br>Cookies with Maple...</p>
+        </div>
+         <div class="card">
+          <img src="image/pinch3.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i>186</button>
+          <p class="soft">Boursin Appetizer with<br>Pistachios and Honey</p>
+        </div>
+         <div class="card">
+          <img src="image/save4.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i>307</button>
+          <p class="soft">Ridiculosly Good Air<br>Fryer salmon</p>
+        </div>
+         <div class="card">
+          <img src="image/life2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 40.3k</button>
+          <p class="soft">Roasted Sweet potato<br>stacks with chipol...</p>
+        </div>
+          <div class="card">
+          <img src="image/zuppa10.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 80.8k</button>
+          <p class="soft">Ang's Creamy<br>Tortelini soup</p>
+        </div> 
+          <div class="card">
+          <img src="image/link1.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 112.7k</button>
+          <p class="soft">Quick Homemade<br>Ramen</p>
+         </div>
+         <div class="card">
+          <img src="image/air12.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 99</button>
+          <p class="soft">Ridiculosh <br>Chocolate Chips....</p>
+        </div>
+         <div class="card">
+          <img src="image/air11.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 33.2k</button>
+          <p class="soft">The best soft<br>Chocolate Chips....</p>
+        </div> 
+         <div class="card">
+          <img src="image/save10.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 30.7k</button>
+          <p class="soft">The best soft<br>Chocolate Chips....</p>
+        </div>
+        
+     <button class="arrow right" onclick="slideRight()"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+
+
+    <script>
+      const slider = document.getElementById("slider");
+
+      function slideRight(){
+        slider.scrollLeft+=300;
+      }
+      function slideLeft(){
+        slider.scrollLeft-=300;
+      }
+
+      const best=document.getElementById("weeks");
+      function Right(){
+        weeks.scrollLeft+=300;
+      }
+      
+      function Left(){
+        weeks.scrollLeft-=300;
+      }
+
+      const show =document.getElementById("alls");
+       function giveRight(){
+       alls.scrollLeft+=300;
+      }
+      
+      function menuLeft(){
+        alls.scrollLeft-=300;
+      }
+
+
+       const tupe =document.getElementById("view");
+       function downRight(){
+         view.scrollLeft+=300;
+
+      }
+       function tapLeft(){
+        view.scrollLeft-=300;
+       }
+
+
+     
+
+
+      let total=0;
+      function toggleLike(btn){
+        let count = document.getElementById("totalLikes");
+
+        if(btn.classList.contains("liked")){
+        btn.classList.remove("liked");
+        total--;
+      }else{
+        btn.classList.add("liked");
+        btn.style.color=""
+        total++;
+      }
+      count.innerHTML=total;
+    }
+
+    </script>
+
+
+ <div class="best" id="best">
+  <p class="last">LATEST &#10095; <button>show all</button></p>
+    <button class="arrow left" onclick="Left(this)"><i class="fa-solid fa-angle-left"></i></button>
+      <div class="weeks" id="weeks">
+
+        <div class="card">
+          <img src="image/pinch4.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+         <div class="card">
+          <img src="image/keep1.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">20 Best Appetizer<br>and Dips For A Party</p>
+        </div>
+         <div class="card">
+          <img src="image/life2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">Roasted Sweet Patato <br>Stack with Chipotle</p>
+        </div>
+         <div class="card">
+          <img src="image/jk2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">Sheet pan Breakfast <br>Burritos with cream...</p>
+        </div>
+         <div class="card">
+          <img src="image/zuppa.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">Zuppa Toscana</p>
+        </div>
+          <div class="card">
+          <img src="image/reci.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">25 favorite<br>Thanksgiving sides</p>
+        </div> 
+          <div class="card">
+          <img src="image/thank.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">Creamy Chicken and <br>Gnocchi</p>
+         </div>
+         <div class="card">
+          <img src="image/thnk2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">31 Cozy Soups and <br>Stews</p>
+        </div>
+         <div class="card">
+          <img src="image/in1.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+         <div class="card">
+          <img src="image/house2.jpg" alt="">
+          <button class="like-btn" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> 366.2k</button>
+          <p class="soft">The best soft<br>Chocolate Chips....</p>
+        </div>
+        
+     <button class="arrow right" onclick="Right(this)"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+
+
+    <!---- videos------>
+    <div class="show" id="show">
+  <p class="last">STORICES &#10095; <button>show all</button></p>
+    <button class="arrow left" onclick="menuLeft(this)"><i class="fa-solid fa-angle-left"></i></button>
+      <div class="alls" id="alls">
+
+        <div class="card">
+          <video src="Video/video11.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+         <div class="card">
+         <video src="Video/vide01.mp4">mp4</video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">20 Best Appetizer<br>and Dips For A Party</p>
+        </div>
+         <div class="card">
+         <video src="Video/video3.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">Roasted Sweet Patato <br>Stack with Chipotle</p>
+        </div>
+         <div class="card">
+         <video src="Video/video4.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Sheet pan Breakfast <br>Burritos with cream...</p>
+        </div>
+         <div class="card">
+         <video src="Video/video5.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Zuppa Toscana</p>
+        </div>
+          <div class="card">
+         <video src="Video/video6.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">25 favorite<br>Thanksgiving sides</p>
+        </div> 
+          <div class="card">
+          <video src="Video/video7.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">Creamy Chicken and <br>Gnocchi</p>
+         </div>
+         <div class="card">
+          <video src="Video/video8.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">31 Cozy Soups and <br>Stews</p>
+        </div>
+         <div class="card">
+         <video src="Video/video9.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+         <div class="card">
+          <video src="Video/video10.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">The best soft<br>Chocolate Chips....</p>
+        </div>
+
+         <div class="card">
+          <video src="Video/video11.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+
+         <div class="card">
+          <video src="Video/video8.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">31 Cozy Soups and <br>Stews</p>
+        </div>
+         <div class="card">
+         <video src="Video/video9.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+
+         <div class="card">
+         <video src="Video/video4.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+
+         <div class="card">
+         <video src="Video/video3.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+
+         <div class="card">
+         <video src="Video/video2.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+        
+     <button class="arrow right" onclick="giveRight(this)"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+
+    <!---- video 2------>
+
+      <div class="tupe" id="tupe">
+     <p class="last">VIDEO &#10095; <button>show all</button></p>
+    <button class="arrow left" onclick="tapLeft(this)"><i class="fa-solid fa-angle-left"></i></button>
+      <div class="view" id="view">
+
+        <div class="card">
+          <video src="Video/video20.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+         <div class="card">
+         <video src="Video/video12.mp4">mp4</video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">20 Best Appetizer<br>and Dips For A Party</p>
+        </div>
+         <div class="card">
+         <video src="Video/video9.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">Roasted Sweet Patato <br>Stack with Chipotle</p>
+        </div>
+         <div class="card">
+         <video src="Video/video2.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Sheet pan Breakfast <br>Burritos with cream...</p>
+        </div>
+         <div class="card">
+         <video src="Video/video14.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Zuppa Toscana</p>
+        </div>
+          <div class="card">
+         <video src="Video/video15.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">25 favorite<br>Thanksgiving sides</p>
+        </div> 
+          <div class="card">
+          <video src="Video/video16.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i> </button>
+          <p class="soft1">Creamy Chicken and <br>Gnocchi</p>
+         </div>
+         <div class="card">
+          <video src="Video/video17.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">31 Cozy Soups and <br>Stews</p>
+        </div>
+         <div class="card">
+         <video src="Video/video18.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">Teriyaki Tofu Bowls <br>with kimchi mayo</p>
+        </div> 
+         <div class="card">
+          <video src="Video/video19.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1">The best soft<br>Chocolate Chips....</p>
+        </div>
+
+        <div class="card">
+          <video src="Video/video20.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+        <div class="card">
+          <video src="Video/video4.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+
+        <div class="card">
+          <video src="Video/video2.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+
+        <div class="card">
+          <video src="Video/video16.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+        <div class="card">
+          <video src="Video/video12.mp4"></video>
+          <button class="lii" onclick="toggleLike(this)"><i class="fa-regular fa-heart"></i></button>
+          <p class="soft1"> 32 Dinner Recipes<br>For When you Don't...</p>
+        </div>
+        
+     <button class="arrow right" onclick="downRight(this)"><i class="fa-solid fa-angle-right"></i></button>
+      </div>
+    </div>
+   
+
+
+
+</body>
+</html>

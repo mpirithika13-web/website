@@ -1,0 +1,241 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.top-like{
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 17px;
+    color: white;
+    background-color: #47283c;
+    border-radius: 10px;
+    text-align: center;
+    padding: 7px 7px;
+}
+#close{
+    background-color: #614b59;
+    width: 100%;
+    height: 150px;
+   
+}
+.pur{
+    display: flex;
+    justify-content: end;
+}
+#neek{
+    position: relative;
+    right: 500px;
+    margin-top: 100px;
+    font-size: 18px;
+    color: white;
+}
+#neek:hover{
+    background-color: lightgray;
+    padding: 6px 6px;
+    border-radius: 50%;
+}
+.pirithi h4{
+    position: fixed;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-weight: 400;
+}
+.pirithi p{
+    position: relative;
+    top: 100px;
+    font-size: 13px;
+    color: white;
+    right: 20px;
+}
+.top-like i{
+    color: white;
+}
+
+.search{
+    border: 2px solid #f5f5f5;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 9px 9px;
+    width: 80%;
+    margin-left: 10%;
+    border-top: 5px solid #f5f5f5;
+
+}
+.search input{
+    border: 1px solid white;
+    font-size: 15px;
+    outline: none;
+}
+.search i{
+    position: absolute;
+    justify-items: end;
+    color: #734060;
+    left: 85%;   
+}
+
+/* section 2*/
+.card{
+   margin-top: 30px;
+}
+.card img{
+    width: 150px;
+    height: 150px;
+}
+.card:hover{
+    transform: scale(1.02);
+}
+.like-btn{
+    font-size: 14px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    position: relative;
+    left: 50px;
+    width: 100px;
+    height: 30px;
+    bottom: 30px;
+    color: #734060;
+    border-radius: 20px 0px 0px 0px;
+}
+.like-btn i{
+    color: #734060;
+    font-size: 17px;
+}
+.soft{
+    font-size: 15px;
+    position: relative;
+    bottom: 30px;
+    color: #444;
+    cursor: pointer;
+}
+.soft:hover{
+    color: #734060;
+}
+.last{
+    color: #734060;
+}
+.last button{
+    border: none;
+    font-size: 12px;
+    display: none;
+}
+.last:hover button{
+    display: inline-block;
+}
+
+.slider-wrapper{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.slider{
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+
+}
+.arrow{
+    border: none;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    position: absolute;
+    margin-top: 80px;
+    font-size: 15px;
+}
+
+.right{
+    right: 35px;
+}
+
+.left{
+    left: 35px;
+}
+.arrow:hover{
+    background-color: #734060;
+
+}
+
+
+.best{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.weeks{
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+
+}
+.arrow{
+    border: none;
+    border-radius: 50%;
+    font-size: 25px;
+    cursor: pointer;
+    padding: 5px 10px;
+    position: absolute;
+    margin-top: 90px;
+    font-size: 17px;
+}
+.right{
+    right: 35px;
+}
+.arrow:hover{
+    background-color: #734060;
+
+}
+iframe{
+  height: 200px;
+}
+/* videos */
+.card video{
+    height: 200px;
+    border-radius: 10px;
+    
+}
+.lii{
+    position: relative;
+    bottom: 200px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    border: none;
+    color: #734060;
+    left: 70px;
+}
+.soft1{
+    position: relative;
+    bottom: 125px;
+    font-size: 14px;
+    padding: 10px 10px;
+    color: white;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.show{
+    position: relative;
+    width: 90%;
+    margin: auto;
+}
+.alls{
+    display: flex;
+    gap: 15px;
+    overflow: hidden;
+}
+
+iframe{
+  height: 200px;
+}
+
+.tupe{
+    position: relative;
+    width: 90%;
+    margin: auto;
+    bottom: 80px;
+}
+.view{
+    display: flex;
+     gap: 15px; 
+    overflow: hidden;
+}

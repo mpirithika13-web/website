@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="Css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-96x96.png">
+</head>
+<body>
+    <div class="popup" id="popup">
+       <div class="close-btn" onclick="closePopup()"><i class="fa-solid fa-xmark"></i></div>
+       <h1>Save time.Eat delicous food.</h1>
+       <p>Get our all-time most popular recipes,<br>organized and neatly delived right to<br>your inbox(with a free printable <br>cookbook to boot!)</p>
+
+       <input type="text" id="firstName" placeholder="First Name">
+       <input type="email" id="email" placeholder="Email">
+       <button onclick="otp()">send me the recipes</button>
+       <p>We respect your privacy.Unsubscribe at any time</p>
+    </div>
+
+    <script>
+        function closePopup(){
+            document.getElementById("popup").style.display="none";
+        }
+        
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+
+ body{
+    margin: 0;
+    padding: 0;
+    justify-items: center;
+    background-color: gray;
+ 
+}
+.popup{
+    width: 31%;
+    background-color:white; 
+     padding: 25px;  
+    position: relative;
+    justify-content: center;
+     top: 50px; 
+    text-align: center;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+   
+}
+.popup p{
+    font-size: 17px;
+    margin-bottom: 20px;
+    line-height: 20px;
+
+}
+#check{
+   position: relative;
+    display: flex;
+}
+#check input{
+    position: relative;
+    top: 15px; 
+   height: 20px;
+   width: 20px; 
+  
+}
+#check p{
+   color: grey;
+}
+input{
+    width: 95%;
+    padding: 12px;
+    border-radius: 5px;
+    margin-bottom: 12px;
+    font-size: 16px;
+    border: 1px solid gray;   
+}
+
+ #short1{
+    width: 100%;
+    padding: 12px;
+    background-color:lightgrey;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    letter-spacing: 1px;
+    color: gray;
+   
+ }
+ .short2{
+   color: #777777;
+  
+  
+ }
+ #soure{
+   width: 100%;
+   height: 50px;
+   border: none;
+   background-color: #2987ef;
+   font-size: 17px;
+   color: white;
+   justify-items: center;
+   
+ }
+
+ #soure img{
+    height: 35px;
+   width: 35px; 
+   position: relative;
+     top: 7px;  
+ }
+ #soure a{
+   text-decoration: none;
+   display: flex;
+ }
+ 
+  #soure p{
+   color:white;
+   padding: 0px 0px 0px 20px;
+ } 
+ #call1{
+   color: #4d4d4d;
+ }
+ #call1 span{
+   color: #734060;
+ }
+
+.close-btn{
+    position:absolute;
+    top: 0;
+    background-color: #734060;
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+.close-btn i{
+   position: absolute;
+    right:50px; 
+   top: 10px;
+   color: white;
+}
+#sign{
+   color: #777777;
+   position: relative;
+   top: 0px;
+}
+#gree{
+   position: relative;
+   bottom: 10px;
+}
+/*moblie */
+@media(max-width:480px){
+   .close-btn{
+    position: relative;
+    bottom: 25px;
+    background-color: #734060;
+    width:100%;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    font-size: 20px;
+}
+   
+}
+
+
+

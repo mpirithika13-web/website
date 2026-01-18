@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinch of yum- A food blog with Recipes </title>
+    <link rel="stylesheet" href="Css/sign.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="https://pinchofyum.com/wp-content/uploads/cropped-Pinch-of-Yum-Favicon-512-96x96.png">
+</head>
+<body>
+  <div class="popup" id="popup">
+       <div class="close-btn" onclick="closePopup()"><i class="fa-solid fa-xmark"></i></div>
+       <h3 id="sign">Sign up</h3>
+       <p id="gree">Creat an account to save your favorite recipes!</p>
+
+       <input type="text" id="firstName" placeholder="First Name">
+       <input type="email" id="email" placeholder="Email">
+       <input type="email" id="email" placeholder="Password">
+       
+     <div id="check">
+          <input type="checkbox"><p>Subscribe me to the pinch of yum newsletter!</p>
+     </div>
+     
+       <button id="short1">SIGN UP</button>
+       <p class="short2">OR</p>
+
+       <div id="soure">
+        <a href="account.html">
+         <img src="image/in2.jpg" alt="">
+         <p>Sign up with Goolgle</p>
+        </a> 
+       </div>
+
+        <h4 id="call1">Have an account ? <span>Sign up</span></h4>
+    </div>
+    
+    <script>
+        function closePopup(){
+            document.getElementById("popup").style.display="none";
+        }
+    </script>
+  
+</body>
+</html>
