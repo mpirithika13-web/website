@@ -208,9 +208,10 @@ nav ul{
         width: 120px;
         height: 120px;
     }
-    #add1 img{
-        width: 90px;
-        height: 90px;
+    .add1 img{
+       width: 90px;
+       height: 90px;
+       
         position: relative;
         top: 320px;
         right: 20px;
@@ -313,7 +314,8 @@ hr{
     
 }
 .add1 img{
-   width: 200px;
+   width: 150px;
+   height: 150px;
    border-radius:50%;
    position: relative;
    top: 30px;
