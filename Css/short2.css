@@ -8,7 +8,7 @@
 body{
     font-family: Arial, Helvetica, sans-serif;
     color: #333;
-    overflow-x: hidden;
+
 }
 /*singup section*/
 
@@ -209,11 +209,11 @@ nav ul{
         height: 120px;
     }
     #add1 img{
-        width: 120px;
-        height: 120px;
+        width: 90px;
+        height: 90px;
         position: relative;
         top: 320px;
-        right: 30px;
+        right: 20px;
     }
 
 }
@@ -309,7 +309,7 @@ hr{
 .live img{
     width: 50%;
     height: 250px;
-    position: relative;
+
     
 }
 .add1 img{
